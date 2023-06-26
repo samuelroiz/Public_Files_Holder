@@ -1,14 +1,1560 @@
 {
-  "posts": [
-    { "id": 1, "title": "Post 1" },
-    { "id": 2, "title": "Post 2" },
-    { "id": 3, "title": "Post 3" }
-  ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 },
-    { "id": 2, "body": "some comment", "postId": 1 }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+    "data": {
+        "questions": {
+            "questions": [
+                {
+                    "id": "ffa6e8b8-c781-4cd1-bde3-72c2783af8fb",
+                    "title": "Is the check in PCDA in QMS done correctly and exists?",
+                    "description": "The process of the data, results, and information gathered from the previous step as they are evaluated",
+                    "tags": [],
+                    "queries": [
+                        {
+                            "name": "Requirement PCDA Gaps",
+                            "query": "FIND * WITH (displayName~=(\"evelopment\" OR \"bjective\") OR description~=(\"evelopment\" OR \"bjective\") or name~=(\"evelopment\" OR \"bjective\") or title~=(\"evelopment\" OR \"bjective\")) AND _class=(\"Requirement\" or \"Policy\" or \"Procedure\") AND (state=(\"GAP_DETECTED\"))",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        },
+                        {
+                            "name": "Requirement PCDA Warning",
+                            "query": "FIND * WITH (displayName~=(\"evelopment\" OR \"bjective\") OR description~=(\"evelopment\" OR \"bjective\") or name~=(\"evelopment\" OR \"bjective\") or title~=(\"evelopment\" OR \"bjective\")) AND _class=(\"Requirement\" or \"Policy\" or \"Procedure\") AND (state=(\"WARNING\"))",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        },
+                        {
+                            "name": "Requirement PCDA Unknown",
+                            "query": "FIND * WITH (displayName~=(\"evelopment\" OR \"bjective\") OR description~=(\"evelopment\" OR \"bjective\") or name~=(\"evelopment\" OR \"bjective\") or title~=(\"evelopment\" OR \"bjective\")) AND _class=(\"Requirement\" or \"Policy\" or \"Procedure\") AND (state=(\"UNKNOWN\"))",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "f83ee10b-d067-4637-aa64-68c1f2e4bb71",
+                    "title": "What is the status on the act or adjust in PCDA in QMS?",
+                    "description": "A combination of the \"do\" and \"check\" stages that help determine issues and vulnerabilities with the procedure",
+                    "tags": [],
+                    "queries": [
+                        {
+                            "name": "Requirement PCDA Gaps",
+                            "query": "FIND * WITH (displayName~=(\"evelopment\" OR \"bjective\") OR description~=(\"evelopment\" OR \"bjective\") or name~=(\"evelopment\" OR \"bjective\") or title~=(\"evelopment\" OR \"bjective\")) AND _class=(\"Requirement\" or \"Policy\" or \"Procedure\") AND (state=(\"GAP_DETECTED\"))",
+                            "version": null,
+                            "resultsAre": "BAD"
+                        },
+                        {
+                            "name": "Requirement PCDA Warning",
+                            "query": "FIND * WITH (displayName~=(\"evelopment\" OR \"bjective\") OR description~=(\"evelopment\" OR \"bjective\") or name~=(\"evelopment\" OR \"bjective\") or title~=(\"evelopment\" OR \"bjective\")) AND _class=(\"Requirement\" or \"Policy\" or \"Procedure\") AND (state=(\"WARNING\"))",
+                            "version": null,
+                            "resultsAre": "BAD"
+                        },
+                        {
+                            "name": "Requirement PCDA Unknown",
+                            "query": "FIND * WITH (displayName~=(\"evelopment\" OR \"bjective\") OR description~=(\"evelopment\" OR \"bjective\") or name~=(\"evelopment\" OR \"bjective\") or title~=(\"evelopment\" OR \"bjective\")) AND _class=(\"Requirement\" or \"Policy\" or \"Procedure\") AND (state=(\"UNKNOWN\"))",
+                            "version": null,
+                            "resultsAre": "BAD"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "f379cf18-84e1-47a6-b42f-67e857e5c4a9",
+                    "title": "What recovery activities will continue after your organization  transitions from short-term to long-term recovery?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What findings and metrics are being monitored for security relevance?",
+                            "query": "find (Finding|Monitor)",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "f2c46e29-4e18-4a77-84b2-dcb3aeabca83",
+                    "title": " How will your organization restore customer and public user confidence following this type of incident?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are the policies and procedures for customer responsibilities in case of breach?",
+                            "query": "find (Policy|Procedure) with title~='Customer Responsibilities in a Possible Breach'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "f118b122-840c-4271-95a9-d573b6009615",
+                    "title": "What is my new favorite color?",
+                    "description": "Monty Python still wants to know.",
+                    "tags": [
+                        "Testing"
+                    ],
+                    "queries": [
+                        {
+                            "name": "favorite-color",
+                            "query": "Find * with tag.colored=true AND tag.favorite=true",
+                            "version": null,
+                            "resultsAre": "GOOD"
+                        },
+                        {
+                            "name": "not-favorite-color",
+                            "query": "Find * with tag.colored!=true OR tag.favorite!=true",
+                            "version": null,
+                            "resultsAre": "BAD"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": [
+                        {
+                            "type": null,
+                            "standard": "NIST CSF",
+                            "requirements": [
+                                "ID.AM-1"
+                            ],
+                            "controls": null,
+                            "details": null
+                        }
+                    ],
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "eddb4e6f-bd33-4468-8dc1-28850b767f0e",
+                    "title": "List all jenkins users ",
+                    "description": null,
+                    "tags": null,
+                    "queries": [
+                        {
+                            "name": "",
+                            "query": "find jenkins_user",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        },
+                        {
+                            "name": "",
+                            "query": "FIND User WITH _type='jenkins_user'",
+                            "version": null,
+                            "resultsAre": null
+                        },
+                        {
+                            "name": "",
+                            "query": "find * with _type='jenkins_user'",
+                            "version": null,
+                            "resultsAre": null
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": [],
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "e9e5968d-77b7-495f-95f7-6e980eadd0e7",
+                    "title": "Does your organization have forensic services available?     What SOPs, if any, do you have in place?       How would available services be initiated?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Which resources do not have diagnostic settings?",
+                            "query": "Find (   azure_api_management_service|   azure_batch_account|   azure_cdn_endpoint|   azure_cdn_profile|   azure_container_registry|   azure_event_grid_domain|   azure_event_grid_topic|   azure_keyvault_service|   azure_lb|   azure_mariadb_server|   azure_mysql_server|   azure_network_azure_firewall|   azure_postgresql_server|   azure_public_ip|   azure_security_group|   azure_sql_server|   azure_subscription|   azure_vnet ) that has azure_diagnostic_setting",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "e55952a5-267c-479c-9a36-6ae355d0a90a",
+                    "title": "At what point would you consider your organization back to steady state operations?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are the policies and procedures for incident response?",
+                            "query": "find Procedure    that IMPLEMENTS Policy with    title~='Incident Response'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "e4b020e6-34a8-4294-bba7-1e143f554e2d",
+                    "title": "List jenkins account and associated jenkins users",
+                    "description": null,
+                    "tags": null,
+                    "queries": [
+                        {
+                            "name": "",
+                            "query": "find jenkins_account as account that has jenkins_user as user return account, user",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        },
+                        {
+                            "name": "",
+                            "query": "find Account as account that has jenkins_user as user return account, user",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": [],
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "e09ad00e-2a62-435e-ac28-38837426773a",
+                    "title": "What customers and partners and local, state, or federal resources     are available to assist in recovery or business continuity?      Does your organization have memorandums of understanding with  response entities?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Do I have proper vendor support for my software applications?",
+                            "query": "Find Application as app   that CONNECTS Account that (HAS|HOSTS|MANAGES) Vendor as v return   app.displayName as app,   v.name as vendor, v.linkToSLA, v.linkToMSA",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        },
+                        {
+                            "name": "Do I have proper vendor support for my software applications?",
+                            "query": "Find Application as app   that (HAS|HOSTS|MANAGES) Vendor as v return   app.displayName as app,   v.name as vendor, v.linkToSLA, v.linkToMSA",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        },
+                        {
+                            "name": "Do I have proper vendor support for my software applications?",
+                            "query": "Find Application   that !(HAS|HOSTS|MANAGES) (Account|Vendor|CodeRepo|Project)",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "dbce0595-aa2d-4208-befe-7fec6823084e",
+                    "title": "Following this attack, what additional protective measures will be     put in place at your organization or in your system?     How would information on protective measures be obtained?      How would any relevant sensitive information be shared?        How do you communicate information to customers and partners      or receive information from them?          ii. Do you know how to contact your local / state law      enforcement agencies?          iii. Do you have a Homeland Security Information Network (HSIN)       account?     Do you know how to contact your CISA Protective Security Advisor  (PSA)?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Are there documented learnings (i.e. postmortem activities) from incidents or outages?",
+                            "query": "Find 'post mortem' with _class=('Review' or 'Record' or 'Document') and    (_createdOn > date.now-1yr or _beginOn > date.now-1yr)",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        },
+                        {
+                            "name": "Are there documented learnings (i.e. postmortem activities) from incidents or outages?",
+                            "query": "Find 'postmortem' with _class=('Review' or 'Record' or 'Document') and (_createdOn > date.now-1yr or _beginOn > date.now-1yr)",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "d9351922-4e50-45a4-b018-43c48863884d",
+                    "title": "Is Assignment of Roles, development, and management team updated or reviewed every 90 days? ",
+                    "description": "Ensures Assignment of Roles, development, and management team is updated or reviewed every 90 days",
+                    "tags": [],
+                    "queries": [
+                        {
+                            "name": "Updated/Reviewed within 90 days",
+                            "query": "FIND \"Assignment of Roles, development, and management team\" WITH _class=\"Procedure\" AND ((reviewedOn > date.now - 90 day) OR (updatedOn > date.now - 90 day)) as u RETURN u.displayName as title, u.reviewedOn as reviewedOn, u.updatedOn as updatedOn",
+                            "version": null,
+                            "resultsAre": "GOOD"
+                        },
+                        {
+                            "name": "Updated/Reviewed after 90 days",
+                            "query": "FIND \"Assignment of Roles, development, and management team\" WITH _class=\"Procedure\" AND ((reviewedOn < date.now - 90 day) OR (updatedOn < date.now - 90 day)) as u RETURN u.displayName as title, u.reviewedOn as reviewedOn, u.updatedOn as updatedOn",
+                            "version": null,
+                            "resultsAre": "BAD"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "c6bf969d-c69b-489d-8480-029fe677cc5e",
+                    "title": " What protocols exist for alerting employees to an incident?  What notification methods does your team use to send alert information?",
+                    "description": "Module Two: Incident Response",
+                    "tags": [
+                        "module2"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Is there a communication template for external notification in case of a breach?",
+                            "query": "find Procedure with   title~='Sample Notification Letter'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "bfad8f67-1c51-4aa0-a97d-9c174a30082f",
+                    "title": "Does your organization set up a unified command and communication  UCC team at this time?     When would you expect unified command to begin coming together?   Are key customers, agencies and company personnel familiar with UCC procedures?       What are each organization's priorities at this stage of the incident?  Which customers / agencies are involved in the response?  Which customer or agency would have the lead in the response?  How would law enforcement respond to the reports of an attack?    How would the response change given the information about the data impacted?",
+                    "description": "Module Two: Incident Response",
+                    "tags": [
+                        "module2"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Is there a communication template for external notification in case of a breach?",
+                            "query": "find Procedure with title~='Sample Notification Letter'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "be8cac21-39b3-42cd-a663-dce05212593b",
+                    "title": "List all jenkins jobs ",
+                    "description": null,
+                    "tags": null,
+                    "queries": [
+                        {
+                            "name": "",
+                            "query": "find jenkins_job",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        },
+                        {
+                            "name": "",
+                            "query": "FIND Project with _type='jenkins_job'",
+                            "version": null,
+                            "resultsAre": null
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": [],
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "bcf2e857-703b-4fd5-bc4d-415883ba7491",
+                    "title": "Is someone assigned to oversee the PCDA? ",
+                    "description": "Ensures a manager or employee is maintaining the PCDA. ",
+                    "tags": [
+                        "PCDA"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Oversee",
+                            "query": "FIND (User|Account) WITH displayName~=\"PCDA\"",
+                            "version": null,
+                            "resultsAre": "GOOD"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "bc6b8de1-7096-4016-9e04-ff326a13f13e",
+                    "title": "How does your organization receive alerts?",
+                    "description": "Module One: Pre-Incident Information Sharing",
+                    "tags": [
+                        "module1"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Alert Notifications",
+                            "query": "find Resource with alertNotifications=\"On\"",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "b7156aba-4817-42c6-ba55-7b10c5b50a59",
+                    "title": "What federal resources might you employ at this time?",
+                    "description": "Module One: Pre-Incident Information Sharing",
+                    "tags": [
+                        "module1"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What resources  have a data classification tagged as Federal?",
+                            "query": "Find Resources with tag.Federal=true",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "b69c1d1f-008e-414a-a3c6-a06c48e4905b",
+                    "title": "What would the financial impact be on your organization if the     system were offline for a day / week because of such an incident?       What are the implications of being unable to use the system due  to forensics or law enforcement investigation for an extended  (> 1 week) period of time?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are my production resources?",
+                            "query": "Find Resources with tag.Production=true",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "b5d7c528-315e-4ece-ac92-a6df1adf8870",
+                    "title": "How is information communicated with personnel and customers during the days following the incident?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are the policies and procedures for customer responsibilities in case of breach?",
+                            "query": "find (Policy|Procedure) with title~='Customer Responsibilities in a Possible Breach'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "ac324acb-0ba2-4884-be47-a423c48f4105",
+                    "title": "which jenkins jobs are configured with build discarder",
+                    "description": "NIST SR-12: Component disposal ",
+                    "tags": null,
+                    "queries": [
+                        {
+                            "name": "",
+                            "query": "find jenkins_job with buildDiscarder=true",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": [],
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "ab99b4a9-86e5-4c9d-a821-ce020a530f6a",
+                    "title": "What steps are needed to ensure the area is cleared of threats?",
+                    "description": "Module Two: Incident Response",
+                    "tags": [
+                        "module2"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Is threat modeling a part of security considerations as a part of new application development?",
+                            "query": "find PR    that HAS CodeRepo with name~='rfc'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "a8b890e4-4d1f-45fa-b88b-0883ed58bbb5",
+                    "title": "What role do local, state, and federal entities have in sharing     information about a credible threat? Customers?",
+                    "description": "Module One: Pre-Incident Information Sharing",
+                    "tags": [
+                        "module1"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are the policies and procedures related to risk management and assessment?",
+                            "query": "find Procedure    that IMPLEMENTS Policy with   title~=('Risk Management' or 'Risk Assessment')",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "a84306a4-d748-41e2-80e5-a54bf4203aa6",
+                    "title": "What is the feedback and recommendations from clients, customers, third party, and employees?",
+                    "description": "Feedback from clients, customers, third parties, and employees for managers to learn and enhance their system life. ",
+                    "tags": [
+                        "Feedback",
+                        "IEC 62304"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Feedback",
+                            "query": "FIND \"feedback\" ",
+                            "version": null,
+                            "resultsAre": "GOOD"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "a73ac70f-9784-47a2-8006-08d894654555",
+                    "title": "Is the do in PCDA in QMS done correctly and exists?",
+                    "description": "To appoint and document the objectives and procedures required to provide the expected developments",
+                    "tags": [],
+                    "queries": [
+                        {
+                            "name": "Maintained every 180 days",
+                            "query": "FIND * WITH (displayName~=(\"evelopment\" OR \"bjective\") OR description~=(\"evelopment\" OR \"bjective\") or name~=(\"evelopment\" OR \"bjective\") or title~=(\"evelopment\" OR \"bjective\")) AND _class=(\"Requirement\" or \"Policy\" or \"Procedure\") AND (reviewedOn > date.now - 180 day OR updatedOn > date.now - 180 day)",
+                            "version": null,
+                            "resultsAre": "GOOD"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "9d351d93-8708-4b2f-ac3c-11e4ac9752ce",
+                    "title": "Would there be any accountability taken of employees and, if so, how     is it accomplished?",
+                    "description": "Module Two: Incident Response",
+                    "tags": [
+                        "module2"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Who are the security team members?",
+                            "query": "Find 'security' with _class=('Team' or 'UserGroup') as team   that has (User|Person) as member return   team.displayName, member.name, member.email",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "9a0c35f6-97ee-40b7-acd7-edf5e894a4a4",
+                    "title": "How is information communicated with personnel and customers during     the days following the incident?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are the policies and procedures for customer responsibilities in case of breach?",
+                            "query": "find (Policy|Procedure) with   title~='Customer Responsibilities in a Possible Breach'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "99b32660-5c4d-4980-9703-6d1636bc8755",
+                    "title": "Is the PCDA plan maintained correctly? ",
+                    "description": "To maintain the ideals of the PCDA plan from the prior step.",
+                    "tags": [
+                        "PCDA",
+                        "Do"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Plan Maintained ",
+                            "query": "FIND * WITH displayName~=\"PCDA Plan\" AND (reviewedOn > date.now - 180 day OR updatedOn > date.now - 180 day)",
+                            "version": null,
+                            "resultsAre": "GOOD"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "907b85eb-40fd-448b-9e33-b09d59745662",
+                    "title": " How does your agency or organization triage intelligence information  you receive, such as from formal reporting, hearsay, and social media?",
+                    "description": "Module One: Pre-Incident Information Sharing",
+                    "tags": [
+                        "module1"
+                    ],
+                    "queries": [
+                        {
+                            "name": "List the threat intel sources and/or special interest groups the security team subscribes to.",
+                            "query": "Find (professional_association|security_forum|threat_intel_source)",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "8ba8f5de-7a68-49ff-b501-05a1874c3bac",
+                    "title": "Who makes the decision on when the system will be available?      How is that decision communicated to the customers and public  users and the media (if necessary)?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Who are the security team members?",
+                            "query": "Find \"security\" with _type=\"employee\"",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "8b57f577-aab5-4ee7-801b-81885b9391b1",
+                    "title": "List  jenkins account having projects configured",
+                    "description": null,
+                    "tags": null,
+                    "queries": [
+                        {
+                            "name": "",
+                            "query": "find jenkins_account that has jenkins_job",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        },
+                        {
+                            "name": "",
+                            "query": "find Account that has Project with _type='jenkins_job'",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": [],
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "83d301b7-1e07-4283-a2a3-d377cc1fdf38",
+                    "title": "What are the PCDA Vulnerability documents?",
+                    "description": null,
+                    "tags": [
+                        "PCDA "
+                    ],
+                    "queries": [
+                        {
+                            "name": "PCDA Vulnerability Documents",
+                            "query": "FIND * WITH displayName~=\"PCDA Vulnerability\" AND createdOn > date.now - 30 day",
+                            "version": null,
+                            "resultsAre": "GOOD"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "83845e5f-fd4f-4a21-9dac-b2810bab2548",
+                    "title": "Who are the okta users?",
+                    "description": null,
+                    "tags": [],
+                    "queries": [
+                        {
+                            "name": "Okta Users along with first and last",
+                            "query": "FIND okta_user as u RETURN u.firstName as first, u.lastName as last",
+                            "version": null,
+                            "resultsAre": "GOOD"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "7f871c11-f25b-4a26-8e74-c712167b38ac",
+                    "title": "which jenkins jobs are using snyk plugins",
+                    "description": "SAST(Snyk)\nNIST SA-15(7): Development process, standards, and tools- automated vulnerability analysis\nNIST SA-11(1) Developer testing and evaluation- static code analysis\nISO 27002:2022 - 8.8: Management of Technical vulnerabilities",
+                    "tags": null,
+                    "queries": [
+                        {
+                            "name": "",
+                            "query": "find jenkins_job with tag.AccountName='pluginsIntegration' as jobs  that uses jenkins_plugins with displayName='snyk-security-scanner' as plugin return jobs, plugin",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": [],
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "7ea3a67e-3e75-4ed7-8d7c-dc8d2ea4fc3e",
+                    "title": "What is your plan to handle the significant media attention from     national or shareholder outlets?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are the policies and procedures for the information security program and scope?",
+                            "query": "find Procedure    that IMPLEMENTS Policy with    title='Security Program Overview'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "79c06b04-5632-4f16-a6a9-2f28e52a8626",
+                    "title": " Who is in charge of notifying customers and state or federal     agencies to the incident, and at what point in the incident would     this occur?     What resources or actions would you expect from customers and state or federal agencies?     How does your organization coordinate response operations with customers and local, state, and federal agencies?",
+                    "description": "Module Two: Incident Response",
+                    "tags": [
+                        "module2"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are the policies and procedures for incident response?",
+                            "query": "find Procedure    that IMPLEMENTS Policy with    title~='Incident Response'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "766d8cdd-a4cc-46f3-9dc1-07adaf6c7aa3",
+                    "title": "What are your organization's response priorities to this incident?",
+                    "description": "Module Two: Incident Response",
+                    "tags": [
+                        "module2"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are the policies and procedures for incident response?",
+                            "query": "find Procedure    that IMPLEMENTS Policy with    title~='Incident Response'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "70b4693a-c1aa-4651-8314-f3be96302a1a",
+                    "title": " What information are you communicating with the customer or public     users?      Who in your organization is responsible for this communication?       How is your organization communicating and ensuring the privacy  of user data?      Do your plans, policies, and procedures outline this?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Who are the security team members?",
+                            "query": "Find \"security\" with _type=\"employee\"",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "6f728561-54dd-4a0e-b053-e5b2dbeef22a",
+                    "title": "What protocols exist for notifying customers and authorities to the incident, and how are any first responders notified?      If the cell network is overwhelmed, does that affect your warning procedures?    Are there alternate alert methods?   How would the security team notify law enforcement to an attack?",
+                    "description": "Module Two: Incident Response",
+                    "tags": [
+                        "module2"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are the policies and procedures for customer responsibilities in case of breach?",
+                            "query": "find (Policy|Procedure) with   title~='Customer Responsibilities in a Possible Breach'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "6f5ecfff-a23f-4666-b751-7382b0bf42d0",
+                    "title": "How do you determine the security of your systems after an incident?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What monitors and host agents are used to monitor the environment?",
+                            "query": "find (HostAgent|Monitor)",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "65dc9af8-6ae5-4a33-9990-b5f44ec14b4b",
+                    "title": "Does your business have a continuity of operations plan?     Does your continuity of operations plan include a crisis  communications plan?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are the business continuity and disaster recovery (BCDR) and contingency plans (CP) and procedures?",
+                            "query": "find Procedure    that IMPLEMENTS Policy with    title='Business Continuity and Disaster Recovery'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "6482ef76-d5d9-4a7c-88c4-66a4b0c9431b",
+                    "title": "What are the priorities at your business post-incident?  Do your plans, policies, or procedures specify these priorities?  How is this communicated internally?      Are priorities coordinated with customers and state or federal  agencies?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are the policies and procedures for incident response?",
+                            "query": "find Procedure that IMPLEMENTS Policy with title~='Incident Response'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "5837ae67-d20a-43d4-a2fa-d35dd4dc5b2a",
+                    "title": " Would patient/user assistance and education and insurance be set up  following the incidents?  If so, who is responsible for this?   What procedures exist for this?  How are users/patients made aware of where to go?  At what point in time would these resources be set up?  Which customers or agencies are involved, and who is responsible  for leading this aspect of the recovery?   Which services would be used?  How are victims made aware of the location?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Are there documented learnings (i.e. postmortem activities) from incidents or outages?",
+                            "query": "Find 'post mortem' with _class=('Review' or 'Record' or 'Document') and    (_createdOn > date.now-1yr or _beginOn > date.now-1yr)",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "5765051d-3e94-43a4-b424-634a74e4f7c6",
+                    "title": "Do your organization's emergency response plans contain protocol to deter  or prevent an event?",
+                    "description": "Module Two: Incident Response",
+                    "tags": [
+                        "module2"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Is threat modeling a part of security considerations as a part of new application development?",
+                            "query": "find PR that HAS CodeRepo with name~='rfc'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "541ca0d3-44e0-45e6-a7e2-8f6222b2213d",
+                    "title": " How would resources be coordinated?  Who is responsible for that coordination?  What other customer / city / county resources would be used, and  how will that occur?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are the business continuity and disaster recovery (BCDR) and contingency plans (CP) and procedures?",
+                            "query": "find Procedure that IMPLEMENTS Policy with title='Business Continuity and Disaster Recovery'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "52532d52-2bcc-4556-b09b-f0ca37060a2e",
+                    "title": "What are your remediation procedures for an incident of this type?     Are there established plans for a complete restore of both the cloud infrastructure as well as the customer data on all clouds and document stores, if necessary?          Who is responsible for activating the restore procedures?       What training has been done on these plans?          Is there a specified point of contact?          Would calendar or holidays or times of day impact this process?           Are there secondary and tertiary contact points in case the primary point of contact is a part of the incident or are overwhelmed?  What plans or procedures exist to work with individuals with access and functional needs?",
+                    "description": "Module Two: Incident Response",
+                    "tags": [
+                        "module2"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are the policies and procedures related to incident response tabletops?",
+                            "query": "find Procedure with   title~='Tabletop'   that IMPLEMENTS Policy with   title~='Incident Response'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "51fce73c-88ee-45a0-a8a9-9d5937647206",
+                    "title": "What Workloads are in my environment?",
+                    "description": "Returns a list of workloads in your environment.",
+                    "tags": null,
+                    "queries": [
+                        {
+                            "name": null,
+                            "query": "Find Workload",
+                            "version": null,
+                            "resultsAre": null
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "50597dde-e5bc-4ecf-9ddc-0648b96f7313",
+                    "title": "TEST",
+                    "description": "TEST",
+                    "tags": [
+                        "TEST"
+                    ],
+                    "queries": [
+                        {
+                            "name": "TEST",
+                            "query": "FIND *",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "4d27f8fa-66cb-42ec-9b83-1c5aba8cffe8",
+                    "title": "How and what type of messaging will be sent to employees and  customers?  Who makes the decision to send these messages?  What training do employees receive regarding media relations and  the release of sensitive information?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Is there a communication template for external notification in case of a breach?",
+                            "query": "find Procedure with title~='Sample Notification Letter'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "4a5efd7f-9e36-44bc-87b0-bc01f11ab05d",
+                    "title": "Does your organization regularly communicate or meet with other  regional transportation public sector stakeholders?  Following the issuance of the alert, what communications might you expect from these relevant customer or public sector stakeholders?  How might you share protection and prevention best practices with provider or customers?",
+                    "description": "Module One: Pre-Incident Information Sharing",
+                    "tags": [
+                        "module1"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are the policies and procedures for customer responsibilities in case of breach?",
+                            "query": " find (Policy|Procedure) with title~='Customer Responsibilities in a Possible Breach'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "49a5c33e-b3b1-43bc-9973-be43e024794c",
+                    "title": "What is the feedback cycle layout?",
+                    "description": "Displays the document cycle layout",
+                    "tags": [],
+                    "queries": [
+                        {
+                            "name": "Feedback Cycle",
+                            "query": "FIND \"feedback cycle\"",
+                            "version": null,
+                            "resultsAre": "GOOD"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "479fab9e-5017-4741-80dd-6a9c67ec7113",
+                    "title": "What is the PCDA's plan objective? ",
+                    "description": "Appoint and document the objectives and procedures required to provide the expected developments.",
+                    "tags": [
+                        "PCDA",
+                        "Plan"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Plan Objective",
+                            "query": "FIND * WITH displayName~=\"PCDA Plan\"",
+                            "version": null,
+                            "resultsAre": "GOOD"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "45653eab-88cc-4ed9-a615-84d9aa0981f0",
+                    "title": "Which jenkins jobs are using (anchore) container scanner plugins?",
+                    "description": "Image/container scanner\nNIST SA-15(7): Development process, standards, and tools- automated vulnerability analysis\nISO 27002:2022 - 8.28: Secure coding",
+                    "tags": null,
+                    "queries": [
+                        {
+                            "name": "",
+                            "query": "find jenkins_job with tag.AccountName='pluginsIntegration' as jobs  that uses jenkins_plugins with displayName='anchore-container-scanner' as plugin return jobs, plugin",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": [],
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "4403f8f6-a94f-43be-a3cd-e26958551793",
+                    "title": "What assets are available in all business, non-business and holiday hours to immediately respond to an incident?  What resources are available that would help with response?  Does your facility have a dedicated or ancillary team on-call that is trained and equipped?",
+                    "description": "Module Two: Incident Response",
+                    "tags": [
+                        "module2"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are the policies and procedures for breach investigation and notification process?",
+                            "query": "find Procedure that IMPLEMENTS Policy with title~='Breach'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "42284fe5-5131-422f-853f-cc9b2796da27",
+                    "title": "Who is responsible for communicating incident information to the affected users? Does your organization have a designated Chief Privacy Officer (CPO)? If so:  What protocols exist for alerting partner organizations to an incident?  Who is responsible for sending out the alerts or warnings?     Do protocols exist for addressing media inquiries?     How do CPOs receive information from the incident?    Do you have canned public information templates for use in different kinds of incidents?      Do you send out any notifications to the public using social media? If so, at what point in the incident would you expect to start sending out the notifications?  Have your CPOs previously collaborated with other supporting organizations' CPOs during a crisis?",
+                    "description": null,
+                    "tags": [
+                        "module2"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Who are the security team members?",
+                            "query": "Find \"security\" with _type=\"employee\"",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "41d97589-603f-4176-927f-6c3f8e0eb635",
+                    "title": "List of jenkins account in J1 integration",
+                    "description": "List of jenkins account in J1 integration",
+                    "tags": null,
+                    "queries": [
+                        {
+                            "name": "",
+                            "query": "find jenkins_account",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        },
+                        {
+                            "name": "",
+                            "query": "FIND Account \n  WITH _type = \"jenkins_account\"",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": [],
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "3da7b061-8ccb-4a2e-8f7c-f00b658e3d3f",
+                    "title": "Based on the scenario, how would the damage impact operations?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are my production data stores and databases?",
+                            "query": "Find (Database|DataStore) with tag.Production=true",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "3b9b0fb8-fbfc-42b7-9723-f8ae24ca9bff",
+                    "title": "  How would your organization receive information about credible  threats?   Are there any HIPAA or government clearance considerations or issues?",
+                    "description": null,
+                    "tags": [
+                        "module1"
+                    ],
+                    "queries": [
+                        {
+                            "name": "List the threat intel sources and/or special interest groups the security team subscribes to.",
+                            "query": "Find (professional_association|security_forum|threat_intel_source)",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "2c846fbf-63b8-4cc2-b35f-6198ce999a69",
+                    "title": "What training programs exist for personnel, and who trains them? How are personnel trained to respond to an incident?",
+                    "description": "Module Two: Incident Response",
+                    "tags": [
+                        "module2"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What training courses are available?",
+                            "query": "find Training as t return t.displayName, t.description",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "1ea3ab85-67a9-4a15-95c0-18ffbfa00b58",
+                    "title": "How does this alert change your security position?",
+                    "description": null,
+                    "tags": [
+                        "module1"
+                    ],
+                    "queries": [
+                        {
+                            "name": "What are the policies and procedures for the information security program and scope?",
+                            "query": "find Procedure that IMPLEMENTS Policy with title='Security Program Overview'",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "1e498c43-7d0a-40af-ba29-9fcb9d04cb94",
+                    "title": "List jenkins jobs that are not configured with build discarders",
+                    "description": "NIST SR-12: Component disposal \nSystem components are to be disposed at any time of during the system development life cycle. ",
+                    "tags": null,
+                    "queries": [
+                        {
+                            "name": "",
+                            "query": "find jenkins_job with buildDiscarder=false",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": [],
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "1b3fefd1-6725-4537-8d90-829bf01c3952",
+                    "title": "Is the plan in PCDA in QMS done correctly and each step exists?",
+                    "description": "PCDA in QMS ",
+                    "tags": [],
+                    "queries": [
+                        {
+                            "name": "Policies and Procedures documented",
+                            "query": "FIND * WITH (displayName~=(\"evelopment\" OR \"bjective\") OR description~=(\"evelopment\" OR \"bjective\") or name~=(\"evelopment\" OR \"bjective\") or title~=(\"evelopment\" OR \"bjective\")) AND _class=(\"Policy\" or \"Procedure\")",
+                            "version": null,
+                            "resultsAre": "GOOD"
+                        },
+                        {
+                            "name": "Requirements/controls",
+                            "query": "FIND * WITH (displayName~=(\"evelopment\" OR \"bjective\") OR description~=(\"evelopment\" OR \"bjective\") or name~=(\"evelopment\" OR \"bjective\") or title~=(\"evelopment\" OR \"bjective\")) AND _class=(\"Requirement\")",
+                            "version": null,
+                            "resultsAre": "GOOD"
+                        },
+                        {
+                            "name": "Requirement/Policy/Procedure PCDA Gaps",
+                            "query": "FIND * WITH (displayName~=(\"evelopment\" OR \"bjective\") OR description~=(\"evelopment\" OR \"bjective\") or name~=(\"evelopment\" OR \"bjective\") or title~=(\"evelopment\" OR \"bjective\")) AND _class=(\"Requirement\" or \"Policy\" or \"Procedure\") THAT HAS jupiterone_compliance_gap",
+                            "version": null,
+                            "resultsAre": "BAD"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "1a898ee6-4c3b-44f4-adaf-b2b56408a60a",
+                    "title": "What cyber-insurance does your organization provide to cover potential costs?  What are the terms and conditions for making a claim?      Who makes the claim?      What documentation and participation is needed for the claim?     What fine print or conditions restrict payment?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Have vendors signed applicable contractual agreements?",
+                            "query": "find Vendor as v return   v.name, v.active, v.validated, v.webLink, v.linkToDPA, v.linkToISA,    v.linkToMSA, v.linkToSLA, v.privacyPolicy, v.termsConditions, v.statusPage",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "181e283a-20e1-482d-877b-95e08c15908c",
+                    "title": "Is there a Software System Overall in the system? ",
+                    "description": "classification shall be documented and the Software System may have lower worst case risk than device overall, but cannot be higher",
+                    "tags": [],
+                    "queries": [
+                        {
+                            "name": "Software System overall exist",
+                            "query": "FIND \"Software System Overall\" ",
+                            "version": null,
+                            "resultsAre": "GOOD"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "0d209db0-f9e5-4674-b9fc-a4ce4e7771c3",
+                    "title": "When was Assignment of Roles, development, and management team updated, or reviewed? ",
+                    "description": "Displays Assignment of Roles, development, and management team policy date",
+                    "tags": [],
+                    "queries": [
+                        {
+                            "name": "Updated and Reviewed since ",
+                            "query": "FIND \"Assignment of Roles, development, and management team\" WITH _class=\"Procedure\" as u RETURN u.displayName as title, u.reviewedOn as reviewedOn, u.updatedOn as updatedOn",
+                            "version": null,
+                            "resultsAre": "GOOD"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "0c0aa115-3519-42f3-964d-5f15ddb4b900",
+                    "title": "Which jenkins jobs are using dependency check plugin",
+                    "description": "Dependency check (SCA)\nNIST SA-15(7): Development process, standards, and tools- automated vulnerability analysis\nNIST SA-11(1) Developer testing and evaluation- static code analysis\nISO 27002:2022 - 8.8: Management of Technical vulnerabilities",
+                    "tags": null,
+                    "queries": [
+                        {
+                            "name": "",
+                            "query": "find jenkins_job with tag.AccountName='pluginsIntegration' as jobs  that uses jenkins_plugins with displayName='dependency-check-jenkins-plugin' as plugin return jobs,plugin",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": [],
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "0b97e018-2af2-4159-954a-c97b094c7be3",
+                    "title": "Who are you?",
+                    "description": "Hookah question.",
+                    "tags": [
+                        "Cattepillar"
+                    ],
+                    "queries": [
+                        {
+                            "name": "alice-test-good-1",
+                            "query": "Find * with tag.Production=true and encrypted=true",
+                            "version": null,
+                            "resultsAre": "GOOD"
+                        },
+                        {
+                            "name": "alice-test-bad-1",
+                            "query": "Find * with tag.Production=true and encrypted!=true",
+                            "version": null,
+                            "resultsAre": "BAD"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": [
+                        {
+                            "type": null,
+                            "standard": "NIST CSF 1.1",
+                            "requirements": [
+                                "ID.AM-1"
+                            ],
+                            "controls": null,
+                            "details": null
+                        }
+                    ],
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "09a773bc-fc4e-47b8-9c01-2e7307d4952a",
+                    "title": "Who has access to ACM?",
+                    "description": null,
+                    "tags": null,
+                    "queries": [
+                        {
+                            "name": "ACM Access",
+                            "query": "FIND AccessPolicy AS e1 THAT RELATES TO AS r1 aws_acm AS e2",
+                            "version": null,
+                            "resultsAre": "INFORMATIVE"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": [
+                        {
+                            "type": null,
+                            "standard": "FedRAMP",
+                            "requirements": [
+                                "AC-2"
+                            ],
+                            "controls": null,
+                            "details": null
+                        }
+                    ],
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "070659c8-af1d-4b01-9377-f84a833a2fa8",
+                    "title": "What information does your organization expect to receive from local, state, or federal entities? Customers? How long does it take for information to be processed for sharing?  To whom and how is this information shared?",
+                    "description": "Module One: Pre-Incident Information Sharing",
+                    "tags": [
+                        "module1"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Which vendors have access to sensitive information? Do I have an appropriate BAA/DPA/NDA for them?",
+                            "query": "Find Vendor with   (classification='critical' or risk > 7 or criticality > 7 or tag.PHI=true or tag.PII=true or tag.PCI=true) and   (linkToBAA!=undefined or linkToNDA!=undefined or linkToDPA!=undefined)",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "06d2bc95-0b91-4f57-81a7-b444b99774f8",
+                    "title": "This is a test run for api and does it work?",
+                    "description": "Testing if creating question works",
+                    "tags": [
+                        "API",
+                        "TEST"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Test found",
+                            "query": "Find 'Test'",
+                            "version": null,
+                            "resultsAre": "GOOD"
+                        },
+                        {
+                            "name": "Pizza found",
+                            "query": "Find 'Pizza'",
+                            "version": null,
+                            "resultsAre": "BAD"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": [
+                        {
+                            "type": null,
+                            "standard": "TX-RAMP 2.0 Level One & Two",
+                            "requirements": [
+                                "AC-01-00",
+                                "AC-02-00"
+                            ],
+                            "controls": null,
+                            "details": null
+                        },
+                        {
+                            "type": null,
+                            "standard": "Test imp FedRAMP Moderate",
+                            "requirements": [
+                                "AC-1",
+                                "AC-2"
+                            ],
+                            "controls": null,
+                            "details": null
+                        }
+                    ],
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                },
+                {
+                    "id": "0081c654-0681-45aa-91d7-1dd3e9a16e5e",
+                    "title": "Would your organization be responsible for responding to the impact this incident has had on your customers and partners?",
+                    "description": "Module Three: Short-term Recovery",
+                    "tags": [
+                        "module3"
+                    ],
+                    "queries": [
+                        {
+                            "name": "Have vendors signed applicable contractual agreements?",
+                            "query": "find Vendor ",
+                            "version": null,
+                            "resultsAre": "UNKNOWN"
+                        }
+                    ],
+                    "variables": null,
+                    "compliance": null,
+                    "accountId": "468b863c-1f08-4706-8d90-56313fda54ab",
+                    "integrationDefinitionId": null
+                }
+            ],
+            "totalHits": 71,
+            "pageInfo": {
+                "endCursor": "WzAsIjAwODFjNjU0LTA2ODEtNDVhYS05MWQ3LTFkZDNlOWExNmU1ZSJd",
+                "hasNextPage": false
+            }
+        }
+    }
 }
